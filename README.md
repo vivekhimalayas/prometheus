@@ -1,4 +1,4 @@
-# prometheus monitoring.
+# Prometheus monitoring
 
 I wanted to do blackbox,server stats monitoring and alerting via prometheus. I could have done that in standalone servers in ec2 or any other server. 
 I tried to do all three in a single container due to cost limitations and other factors. It didnt work exactly as expected. I pointed my nodejs app to a load balancer and used blackbox rules to monitor the endpoint. In an ideal scenario, I would have run three different services with the rules files which I have commited in this repo but was not able to do so due to limitaitons. 
